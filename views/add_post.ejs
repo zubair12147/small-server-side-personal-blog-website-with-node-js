@@ -1,0 +1,14 @@
+<%- include('header',{title: "Add Post"}) %>
+    <div class="post">
+        <h2 class="post-heading">Compose</h2>
+        <div class="add_post">
+            <form action="/" method="post">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" maxlength="60">
+                <label for="postBody">Post</label>
+                <textarea name="postBody" id="postBody" rows="20"></textarea>
+                <button type="submit">Publish</button>
+            </form>
+        </div>
+    </div>
+<%- include('footer') %>

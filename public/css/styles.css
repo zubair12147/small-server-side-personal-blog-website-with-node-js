@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+/* necessary properties of elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+/* Page heading(nav bar) part */
+
+.head {
+  margin: 0 0 auto;
+  height: 15vh;
+  padding: 0 100px;
+  background-color: rgb(217, 216, 216);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.opac {
+  opacity: 0.5;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 20px;
+  letter-spacing: 4px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo a:hover {
+  color: rgb(1, 180, 153);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  margin: 0 30px;
+  font-weight: 400;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-item a:hover {
+  color: rgb(1, 180, 153);
+}
+
+/* Properties of main content of blog pages */
+.content {
+  min-height: 80vh;
+  width: auto;
+  margin: 20px 10vw;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.post {
+  width: 100%;
+  /* height: auto; */
+  margin: 10px auto;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post .post-heading {
+  text-decoration: none;
+  color: rgb(16, 16, 16);
+  font-size: 3rem;
+  font-weight: 600;
+  opacity: 0.8;
+  word-wrap: normal;
+}
+
+.post-container {
+  background: #ffffff;
+  margin: 10px 0px;
+}
+
+.post-container form button {
+  border: none;
+  background: transparent;
+  color: blue;
+  font-size: 16px;
+  position: relative;
+  left: -15px;
+  top: -3px;
+}
+
+/* .post-container form{
+  display:  ;
+} */
+
+.post-content-1 {
+  overflow: hidden;
+  display: inline-block;
+  /* -webkit-line-clamp: 1; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.post-content {
+  overflow: inherit;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 3; */
+  line-height: 1.3;
+  -webkit-box-orient: vertical;
+}
+
+/* Properties of add-post page */
+
+.add_post form {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add_post form * {
+  margin: 3px 0;
+}
+
+form input[type="text"],
+#postBody {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 10px;
+}
+
+input[type="text"]:focus,
+#postBody:focus {
+  box-shadow: 0 0 5px blue;
+  border: 1px solid rgb(0, 135, 252);
+  background-color: rgb(254, 255, 241);
+}
+
+form button {
+  color: white;
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1px solid rgb(0, 135, 252);
+  border-radius: 4px;
+  background-color: rgb(0, 135, 252);
+  align-self: flex-start;
+  position: relative;
+  top: 10px;
+}
+
+/* Page Footer Part */
+
+footer {
+  background-color: rgb(1, 180, 153);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  /* padding: 45% auto; */
+  font-size: 13px;
+}

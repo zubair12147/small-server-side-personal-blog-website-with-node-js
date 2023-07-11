@@ -1,0 +1,15 @@
+<div class="post">
+  <h2 class="post-heading"><%= post_heading %></h2>
+  <div class="post-container">
+    <form action="/display" method="post">
+    <span>
+        <p class="post-content-1"><%= post_content %></p>
+        <input style="display: none; max-width: 1000px; position:absolute" type="text" name="text" id="text" value= "<%= post_heading %>" >
+        <a href="">read more</a>
+        <button type="submit">read more</button>
+      </span>
+    </form>
+    </div>
+  </div>
+
+

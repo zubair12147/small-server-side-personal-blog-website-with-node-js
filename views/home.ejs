@@ -1,0 +1,11 @@
+<%- include('header', {title : mainTitle}) %>
+    <%- include('post_page_content',{heading: "Home", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, adipisci exercitationem nemo fugiat quia voluptates voluptate repellendus voluptatibus eligendi amet nisi ullam aperiam repellat dignissimos dolorum. Necessitatibus dolores iste, dicta beatae ducimus error quae vero illo sequi a minus mollitia explicabo vitae molestiae distinctio! Ullam at neque hic odio tenetur esse nemo sit, sunt cupiditate saepe nam amet alias aspernatur a consequatur voluptatem autem laborum tempora vitae ducimus ipsam ex libero! Laboriosam quisquam odio quibusdam at quam! Sint optio, tempora ea repudiandae ex non quisquam est distinctio ad maiores provident quos nobis accusantium nemo alias illum. Ipsa odio rem blanditiis!" }) %>
+    <% for(let i = 0; i<post_headings.length; i++){ %>
+        <%- include('post', {
+            post_heading: post_headings[i], 
+            post_content: post_contents[i]
+        }) %> 
+    <% } %>
+<%- include('footer') %>
+
+
